@@ -66,4 +66,12 @@ def arithmetic_arranger(problems, show_answers=False):
     return arranged
 
 
-print(f'{arithmetic_arranger(["34 - 698", "1 - 3801", "46 + 43", "123 + 49", "988 + 40"], True)}')
+def main():
+    print("Input arithmetic problems separated by commas. Example format : 42 + 78, 142 - 67, 56 - 90")
+    problems = input("Enter arithmetic problems:\n\n").split(", ")
+    show_answers = input("Show answers? (y/n): ").lower() == "y"
+
+    print(arithmetic_arranger(problems, show_answers))
+    return
+
+main()
