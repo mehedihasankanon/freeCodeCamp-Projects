@@ -45,7 +45,7 @@ def arithmetic_arranger(problems, show_answers=False):
     line_4 = results[0]
 
     l3 = len(second_nums[0])
-    for i in range(l3):
+    for _ in range(l3):
         line_3 += "-"
 
     t = 1
