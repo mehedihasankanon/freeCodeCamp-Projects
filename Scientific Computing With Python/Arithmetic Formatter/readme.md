@@ -1,4 +1,4 @@
-**Copied from [this GitHub repo](https://github.com/adviksinghania/arithmetic-formatter/tree/main)**
+**Assignment statement copied from [this GitHub repo](https://github.com/adviksinghania/arithmetic-formatter/tree/main)**
 
 ### Assignment
 
