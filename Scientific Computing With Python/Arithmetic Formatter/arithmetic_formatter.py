@@ -13,9 +13,9 @@ def arithmetic_arranger(problems, show_answers=False):
             return ans
 
         segments = problem.split()
-        first, op, second = segments 
+        first, op, second = segments
 
-        if op != '+' and op != '-':
+        if op != "+" and op != "-":
             ans = "Error: Operator must be '+' or '-'."
             return ans
         operators.append(op)
@@ -34,10 +34,10 @@ def arithmetic_arranger(problems, show_answers=False):
         results.append(result)
 
     for i in range(cnt):
-        mx = max(len(first_nums[i]),len(second_nums[i]))
-        first_nums[i] = first_nums[i].rjust(mx+2)
-        second_nums[i] = "".join([operators[i]," ",second_nums[i].rjust(mx)])
-        results[i] = results[i].rjust(mx+2)
+        mx = max(len(first_nums[i]), len(second_nums[i]))
+        first_nums[i] = first_nums[i].rjust(mx + 2)
+        second_nums[i] = "".join([operators[i], " ", second_nums[i].rjust(mx)])
+        results[i] = results[i].rjust(mx + 2)
 
     line_1 = first_nums[0]
     line_2 = second_nums[0]
@@ -59,19 +59,22 @@ def arithmetic_arranger(problems, show_answers=False):
         line_4 += "    " + results[t]
         t += 1
 
-    arranged = "".join([line_1,'\n',line_2,'\n',line_3])
+    arranged = "".join([line_1, "\n", line_2, "\n", line_3])
     if show_answers:
         arranged += "\n" + line_4
-    
+
     return arranged
 
 
 def main():
-    print("Input arithmetic problems separated by commas. Example format : 42 + 78, 142 - 67, 56 - 90")
+    print(
+        "Input arithmetic problems separated by commas. Example format : 42 + 78, 142 - 67, 56 - 90"
+    )
     problems = input("Enter arithmetic problems:\n\n").split(", ")
     show_answers = input("Show answers? (y/n): ").lower() == "y"
 
     print(arithmetic_arranger(problems, show_answers))
     return
+
 
 main()
