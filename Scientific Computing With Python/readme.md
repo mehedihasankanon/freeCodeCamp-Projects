@@ -1,1 +1,1 @@
-### [Scientific Computing with Python](https://www.freecodecamp.org/learn/scientific-computing-with-python)
+### [Scientific Computing with Python Course](https://www.freecodecamp.org/learn/scientific-computing-with-python) - by freeCodeCamp
